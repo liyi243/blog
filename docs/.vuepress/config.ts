@@ -8,7 +8,7 @@ import dayjs from 'dayjs'
 import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
 
-const DOMAIN_NAME = 'xugaoyi.com' // 域名 (不带https)
+const DOMAIN_NAME = 'liyz.com' // 域名 (不带https)
 const WEB_SITE = `https://${DOMAIN_NAME}` // 网址
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
@@ -19,10 +19,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     '/': {
       lang: 'zh-CN',
       title: "Liyi's blog",
-      description: 'java后端技术博客,专注java后端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,python,css3,html5,Node,git,github等技术文章。',
+      description: 'java后端技术博客,专注java后端学习与总结。',
     }
   },
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
+  
 
   // 主题配置
   themeConfig: {
@@ -37,43 +38,18 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: '后端文章',
             items: [
-              { text: 'Java', link: '/pages/8143cc480faf9a11/' },
+              { text: 'springboot', link: '/pages//pages/a11854//' },
             ],
           },
-          {
-            text: '学习笔记',
-            items: [
-              { text: '《JavaScript教程》', link: '/note/javascript/' },
-              { text: '《JavaScript高级程序设计》', link: '/note/js/' },
-              { text: '《ES6 教程》', link: '/note/es6/' },
-              { text: '《Vue》', link: '/note/vue/' },
-              { text: '《React》', link: '/note/react/' },
-              {
-                text: '《TypeScript 从零实现 axios》',
-                link: '/note/typescript-axios/',
-              },
-              {
-                text: '《Git》',
-                link: '/note/git/',
-              },
-              {
-                text: 'TypeScript',
-                link: '/pages/51afd6/',
-              },
-              {
-                text: 'JS设计模式总结',
-                link: '/pages/4643cd/',
-              },
-            ],
-          },
+          
         ],
       },
       {
-        text: '页面',
+        text: 'Leetcode',
         link: '/ui/',
         items: [
-          { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
-          { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
+          { text: '解体思路', link: '/pages/8309a5b876fc95e3/' },
+          // { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
         ],
       },
       {
@@ -94,6 +70,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: '面试', link: '/pages/aea6571b7a8bae86/' },
           { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
           { text: '实用技巧', link: '/pages/baaa02/' },
+          { text: '前端相关', link: '/note/javascript/' },
           { text: '友情链接', link: '/friends/' },
         ],
       },
@@ -119,7 +96,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
-    repo: 'xugaoyi/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
+    repo: 'liyi243/liyz243.github.io', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
@@ -210,7 +187,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     extendFrontmatter: {
       author: {
         name: 'Yunzhi Li',
-        link: 'https://github.com/liyi243'
+        link: 'https://github.com/liyi243/liyz243.github.io'
       }
     },
 
@@ -225,7 +202,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       'meta',
       {
         name: 'keywords',
-        content: '后端博客,个人技术博客,后端,后端开发,后端框架,web后端,java后端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
+        content: '后端博客,个人技术博客,后端,后端开发,后端框架,web后端,java后端面试题,技术文档,学习,面试',
       },
     ],
     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
@@ -324,26 +301,26 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         },
       },
     ],
-    // [
-    //   'vuepress-plugin-comment', // 评论
-    //   {
-    //     choosen: 'gitalk',
-    //     options: {
-    //       clientID: 'a6e1355287947096b88b',
-    //       clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-    //       repo: 'blog-gitalk-comment', // GitHub 仓库
-    //       owner: 'xugaoyi', // GitHub仓库所有者
-    //       admin: ['xugaoyi'], // 对仓库有写权限的人
-    //       // distractionFreeMode: true,
-    //       pagerDirection: 'last', // 'first'正序 | 'last'倒序
-    //       id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
-    //       title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
-    //       labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
-    //       body:
-    //         '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
-    //     },
-    //   },
-    // ],
+    [
+      'vuepress-plugin-comment', // 评论
+      {
+        choosen: 'gitalk',
+        options: {
+          clientID: 'a6e1355287947096b88b',
+          clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
+          repo: 'blog-gitalk-comment', // GitHub 仓库
+          owner: 'liyunzhi', // GitHub仓库所有者
+          admin: ['liyunzhi'], // 对仓库有写权限的人
+          // distractionFreeMode: true,
+          pagerDirection: 'last', // 'first'正序 | 'last'倒序
+          id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
+          title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
+          labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
+          body:
+            '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
+        },
+      },
+    ],
     [
       '@vuepress/last-updated', // "上次更新"时间格式
       {
