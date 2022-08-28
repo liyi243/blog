@@ -37,15 +37,18 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: 'java',
             items: [
-              { text: 'java', link: '/pages/3ca163/' },
+              { text: 'java知识点补充', link: '/pages/3ca163/' },
             ],
           },
           {
             text: '框架',
             items: [
               { text: 'springboot', link: '/pages/a11854/' },
-              
+              { text: 'Redis', link: '/pages/a118579/' },
             ],
+          },
+          {
+            text: '项目总结', link: '/pages/9211ac/'
           },
           
         ],
