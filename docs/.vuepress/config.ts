@@ -20,10 +20,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       lang: 'zh-CN',
       title: "Liyi's blog",
       description: 'java后端技术博客,专注java后端学习与总结。',
-    }
+    },
   },
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
-  
+  base: '/blog/',
 
   // 主题配置
   themeConfig: {
@@ -38,7 +38,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: '后端文章',
             items: [
-              { text: 'springboot', link: '/pages//pages/a11854//' },
+              { text: 'springboot', link: '/pages/a11854/' },
             ],
           },
           
@@ -48,7 +48,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: 'Leetcode',
         link: '/ui/',
         items: [
-          { text: '解体思路', link: '/pages/8309a5b876fc95e3/' },
+          { text: '解体思路', link: '/pages/5808bc/' },
           // { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
         ],
       },
@@ -66,11 +66,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: '更多',
         link: '/more/',
         items: [
-          { text: '学习', link: '/pages/f2a556/' },
+          // { text: '学习', link: '/pages/f2a556/' },
           { text: '面试', link: '/pages/aea6571b7a8bae86/' },
-          { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
-          { text: '实用技巧', link: '/pages/baaa02/' },
-          { text: '前端相关', link: '/note/javascript/' },
+          // { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
           { text: '友情链接', link: '/friends/' },
         ],
       },
@@ -187,7 +185,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     extendFrontmatter: {
       author: {
         name: 'Yunzhi Li',
-        link: 'https://github.com/liyi243/liyz243.github.io'
+        link: 'https://github.com/liyi243/blog'
       }
     },
 
@@ -304,13 +302,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     [
       'vuepress-plugin-comment', // 评论
       {
-        choosen: 'gitalk',
+        choosen: 'liyi243',
         options: {
-          clientID: 'a6e1355287947096b88b',
-          clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-          repo: 'blog-gitalk-comment', // GitHub 仓库
-          owner: 'liyunzhi', // GitHub仓库所有者
-          admin: ['liyunzhi'], // 对仓库有写权限的人
+          clientID: 'd1af536a6ae0b585eeb3',
+          clientSecret: 'fe7d5f64714e8267663edf569295257b13bf6c0b',
+          repo: 'liyz243.github.io', // GitHub 仓库
+          owner: 'liyi243', // GitHub仓库所有者
+          admin: ['liyi243'], // 对仓库有写权限的人
           // distractionFreeMode: true,
           pagerDirection: 'last', // 'first'正序 | 'last'倒序
           id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
