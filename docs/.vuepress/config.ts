@@ -14,7 +14,6 @@ const WEB_SITE = `https://${DOMAIN_NAME}` // 网址
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
   theme: 'vdoing', // 使用npm主题包
   // theme: resolve(__dirname, '../../vdoing'), // 使用本地主题包
-
   locales: {
     '/': {
       lang: 'zh-CN',
@@ -36,7 +35,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           {
-            text: '后端文章',
+            text: 'java',
+            items: [
+              { text: 'java', link: '/pages/3ca163/' },
+            ],
+          },
+          {
+            text: '框架',
             items: [
               { text: 'springboot', link: '/pages/a11854/' },
             ],
@@ -154,6 +159,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
     social: {
+      iconfontCssFile: '//at.alicdn.com/t/c/font_3615126_avzwm92bfm.css',
       // iconfontCssFile: '//at.alicdn.com/t/xxx.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加。阿里图片库：https://www.iconfont.cn/
       icons: [
         {
@@ -162,15 +168,26 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           link: 'mailto:liyz243@163.com',
         },
         {
+          iconClass: 'icon-erji',
+          title: '听音乐',
+          link: 'https://music.163.com/#/playlist?id=755597173',
+        },
+        {
           iconClass: 'icon-github',
           title: 'GitHub',
           link: 'https://github.com/liyi243',
         },
         {
-          iconClass: 'icon-erji',
-          title: '听音乐',
-          link: 'https://music.163.com/#/playlist?id=755597173',
+          iconClass: 'icon-gitee',
+          title: 'Gitee',
+          link: 'https://gitee.com/Liyz137',
         },
+        {
+          iconClass: 'icon-csdn',
+          title: 'CSDN',
+          link: 'https://mp.csdn.net/',
+        },
+
       ],
     },
 
