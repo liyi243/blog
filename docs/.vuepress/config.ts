@@ -71,7 +71,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         //   { text: 'Nodejs', link: '/pages/117708e0af7f0bd9/' },
         //   { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
         // ],
-        text: '知识分享小站',
+        text: '笔记项目分享',
         link: '/technology/',
         items: [
           { text: '个人语雀', link: 'https://www.yuque.com/dashboard/my_books' },
@@ -81,7 +81,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       {
-        text: '站点推荐',
+        text: '知识分享小站',
         link: '/friends/',
         // link: '/more/',
         // items: [
