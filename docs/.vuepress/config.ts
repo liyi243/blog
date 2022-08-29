@@ -42,6 +42,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           },
           {
             text: '框架',
+            link: '/pages/a11854/',
             items: [
               { text: 'springboot', link: '/pages/a11854/' },
               { text: 'Redis', link: '/pages/a118579/' },
@@ -72,11 +73,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       {
-        text: '更多',
-        link: '/more/',
+        text: '友情链接',
+        link: '/friends/',
+        // link: '/more/',
         items: [
           // { text: '学习', link: '/pages/f2a556/' },
-          { text: '面试', link: '/pages/aea6571b7a8bae86/' },
+          // { text: '面试', link: '/pages/aea6571b7a8bae86/' },
           // { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
           { text: '友情链接', link: '/friends/' },
         ],
