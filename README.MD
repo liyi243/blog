@@ -27,30 +27,31 @@
 
 [**更新日志**](https://github.com/xugaoyi/vuepress-theme-vdoing/releases) -->
 
-## 这个主题可以做什么？
-<!-- * 案例1：[知识库兼博客站](https://xugaoyi.com/)
-* 案例2：[仅博客站](https://xugaoyi.github.io/vdoing-demo-blog/)
-* 案例3：[仅知识库](https://xugaoyi.github.io/vdoing-demo-repository/)
-* 案例4：[文档站](https://doc.xugaoyi.com/) -->
+## 好友博客链接分享
+* 站点1：[Bert的博客](http://smarthua.cn/)
+* 站点2：[一卒的博客站](https://chengyunlai.top/)
+* 站点3：[本人掘金地址](https://juejin.cn/user/3822333357210557)
+
+
 
 
 ## 快速上手
+* 本站gitee镜像：[Gtiee镜像](https://gitee.com/Liyz137/projects)
+* 先看效果：[效果](https://liyi243.github.io/blog/)
 
-
-<!-- 
 ```bash
 # clone the project
-# git clone https://github.com/xugaoyi/vuepress-theme-vdoing.git
+ git clone git@github.com:liyi243/blog.git
 
 # enter the project directory
-# cd vuepress-theme-vdoing
+cd blog
 
 # install dependency
-# npm install # or yarn install
+npm install # or yarn install
 
 # develop
-# npm run dev # or yarn dev
-``` -->
+npm run dev # or yarn dev
+```
 <!-- ## ⚡️未来...
 
 
@@ -63,7 +64,7 @@
 如果你正在使用这个项目并感觉良好，或只是想要支持我继续开发，你可以通过如下*任意* 方式支持我：
 
 1. *Star* 并 分享这个项目 :rocket:
-2. 保留主题 footer(页脚) 的主题链接 :D
+2. 保留本博客 footer(页脚) 的链接 :
 
 <!-- 4. 轻轻点击一次页面广告 ✨
 4. 通过以下二维码 一次性捐款。 我多半会买一杯 ~~咖啡~~ 茶。:tea:
@@ -78,11 +79,7 @@
 
 ## 致谢
 :heart:感谢支持这个项目的朋友
-
-
-
-
-
+:heart:感谢vdoing主题开发者
 
 ## 许可证
 [MIT](https://github.com/liyi243/blog/master/LICENSE)
