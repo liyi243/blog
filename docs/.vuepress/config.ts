@@ -72,7 +72,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         //   { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
         // ],
         text: '笔记项目分享',
-        link: '/technology/',
+        // link: '/technology/',
         items: [
           { text: '个人语雀', link: 'https://www.yuque.com/dashboard/my_books' },
           { text: 'Gitee', link: 'https://gitee.com/Liyz137/projects' },
