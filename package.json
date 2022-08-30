@@ -6,8 +6,8 @@
     "build": "node --max_old_space_size=4096 ./node_modules/vuepress/cli.js build docs",
     "deploy": "bash deploy.sh",
     "editFm": "node utils/editFrontmatter.js",
-    "baiduPush": "node utils/baiduPush.js https://xugaoyi.com && bash baiduPush.sh",
-    "publish": "cd ./vdoing && npm publish && cd .. && yarn updateTheme",
+    "baiduPush": "node utils/baiduPush.js https://liyi243.cn && bash baiduPush.sh",
+    "publish": "cd ./ && npm publish && cd .. && yarn updateTheme",
     "updateTheme": "yarn remove vuepress-theme-vdoing && rm -rf node_modules && yarn && yarn add vuepress-theme-vdoing -D"
   },
   "license": "MIT",
@@ -27,5 +27,8 @@
     "vuepress-plugin-zooming": "^1.1.7",
     "vuepress-theme-vdoing": "^1.12.8",
     "yamljs": "^0.3.0"
+  },
+  "dependencies": {
+    "vuepress-plugin-posts-encrypt": "^0.0.6"
   }
 }

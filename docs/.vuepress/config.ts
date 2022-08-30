@@ -26,6 +26,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   // 主题配置
   themeConfig: {
+    //加密功能
+    // encrypt: {
+    //   config: {
+    //     '/pages/a11854/': ["1234"],
+    //   }
+    // },
     // 导航配置
     nav: [
       { text: '首页', link: '/' },
@@ -295,6 +301,17 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             frontUrl: `https://www.baidu.com/s?wd=site%3A${DOMAIN_NAME}%20`,
           },
         ],
+      }
+    ],
+
+      // 加密插件
+    [
+      'posts-encrypt',
+      {
+        route: '/auth',
+        passwd: '123456',
+        encryptInDev: false,
+        expires: 1000  * 60
       }
     ],
 
