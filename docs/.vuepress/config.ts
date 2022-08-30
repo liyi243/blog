@@ -21,8 +21,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       description: 'java后端技术博客,专注java后端学习与总结。',
     },
   },
-  base: '/blog/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
-  
+  // base: '/blog/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
+  // base: "/blog/",
 
   // 主题配置
   themeConfig: {

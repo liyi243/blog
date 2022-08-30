@@ -13,7 +13,7 @@ cd docs/.vuepress/dist
 # echo 'liyi243.cn' > CNAME  # 改成你要绑定的域名
 
 msg='deploy'
-githubUrl=git@github.com:liyi243/blog.git  # 按你的代码仓库信息进行修改
+githubUrl=git@github.com:liyi243/liyi243.github.io.git  # 按你的代码仓库信息进行修改
 
 git init
 git add -A
