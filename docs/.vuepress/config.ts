@@ -310,7 +310,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       {
         route: '/auth',
         passwd: '123456',
-        encryptInDev: false,
+        encryptInDev: true,
         expires: 1000  * 60
       }
     ],
