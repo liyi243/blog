@@ -10,7 +10,7 @@ npm run build
 cd docs/.vuepress/dist
 
 # Set CNAME for "gh-pages" branch
-echo 'liyi243.cn' > CNAME  # 改成你要绑定的域名
+echo 'liyi243.top' > CNAME  # 改成你要绑定的域名
 
 msg='deploy'
 githubUrl=git@github.com:liyi243/liyi243.github.io.git  # 按你的代码仓库信息进行修改
